@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://wogtysjbt8rb"]
+
+[ext_resource type="Script" path="res://mesh_instance_3d.gd" id="1_3k10j"]
+[ext_resource type="Texture2D" uid="uid://beh42uhv15i6w" path="res://2k_earth_daymap.jpg" id="1_sn4p5"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_v1md3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kabea"]
+albedo_texture = ExtResource("1_sn4p5")
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.517638, 0, -1.93185, 0, 2, 0, 1.93185, 0, 0.517638, -1, 0, 0)
+mesh = SubResource("SphereMesh_v1md3")
+surface_material_override/0 = SubResource("StandardMaterial3D_kabea")
+script = ExtResource("1_3k10j")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.967557, -0.0755586, -0.241088, -0.120487, 0.976728, 0.177438, 0.222071, 0.20073, -0.954145, -2, 1, -4)
+fov = 92.8125
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.242362, -0.588388, 0.771401, -0.25, 0.73038, 0.635646, -0.937422, -0.346907, 0.0299196, -5, 3, -7)
+shadow_enabled = true
