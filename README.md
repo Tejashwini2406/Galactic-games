@@ -20,8 +20,10 @@ The game is designed to immerse players in an astronaut’s journey through the 
 
 *Prerequisites*
 
-Godot Engine (for running GDScript)
 A modern web browser (for running JavaScript/HTML)
+
+Godot Engine (for running GDScript)
+
 
 *Steps*
 
